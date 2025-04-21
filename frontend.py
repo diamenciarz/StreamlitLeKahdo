@@ -16,7 +16,7 @@ WEBHOOK_URL = "https://diamenciarz.app.n8n.cloud/webhook/invoke_agent"  # Replac
 load_dotenv()
 
 # Import from env
-BEARER_TOKEN = os.getenv("BEARER_TOKEN")
+BEARER_TOKEN = "TestCreds99@@" # os.getenv("BEARER_TOKEN")
 
 # Streamlit app title
 # Add a fixed title to the top left corner
