@@ -19,7 +19,30 @@ load_dotenv()
 BEARER_TOKEN = os.getenv("BEARER_TOKEN")
 
 # Streamlit app title
-st.title("Chat with LLM")
+# Add a fixed title to the top left corner
+st.markdown(
+    """
+    <style>
+    .fixed-title {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        padding: 10px;
+        z-index: 1000;
+        border-bottom: 1px solid #ddd;
+    }
+    .stApp {
+        margin-top: 60px;
+    }
+    </style>
+    <div class="fixed-title">
+        <h1>Le Kahdo | (Alpha Test)</h1>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
 
 # Display chat history
 for message in st.session_state.messages:
