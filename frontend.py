@@ -36,6 +36,9 @@ st.markdown(
     .stApp {
         margin-top: 60px;
     }
+    header, footer {
+        visibility: hidden;
+    }
     </style>
     <div class="fixed-title">
         <h1>Le Kahdo | (Alpha Test)</h1>
